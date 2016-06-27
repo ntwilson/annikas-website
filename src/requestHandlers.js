@@ -20,6 +20,13 @@ export function bootstrap(response, request) {
     serveFile(response, staticBootstrap, "text/css");
 }
 
+export function img(filename, response, request) {
+    if (filename.includes("/") || filename.includes("\\")) {
+        throw "looks like a xss attack!";
+    }
+    serveFile(response, "../images/" + filename, "image");
+}
+
 function serveFile(response, filename, contentType) {
     response.writeHead(200, {"Content-Type": contentType});
     const filePathName = filename;

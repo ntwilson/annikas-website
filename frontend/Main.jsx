@@ -1,28 +1,17 @@
 import * as React from 'react';
-import * as Elm from '../obj/Lib';
-
+import Navigation from './Navigation';
 
 export default React.createClass({
-    getInitialState: function() {
-        return {msg: "initializing..."};
-    },
-    componentDidMount: function() {
-        const ports = Elm.ElmLib.worker().ports; 
-        ports.testMessage.subscribe(this.updateMessage);
-        setTimeout(function() {
-            ports.dispatchGetTestMessage.send("hello");
-        });
-    },
-    updateMessage: function(elmMsg) {
-        this.setState({msg: elmMsg});
-    },
-    render: function () {
-        return (
-            <div className="row">
-                <div className="col-md-6 bolded">hello</div>
-                <div className="col-md-6 bolded">world</div>
-                <div className="col-md-6">{this.state.msg}</div>
-            </div>
-        );
-    }
+  render: function () {
+    var divStyle = {
+      background: 'url(images/20140509_190008987_iOS.jpg) no-repeat center center',
+      minHeight: '100%',
+      backgroundSize: 'cover'
+    };
+    return (
+      <div style={divStyle}>
+        <Navigation/>
+      </div>
+    );
+  }
 });

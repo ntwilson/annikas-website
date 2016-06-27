@@ -1,3 +1,16 @@
 .bolded {
-    font-weight: bold;
+  font-weight: bold;
+}
+
+.no-padding {
+  padding-right: 0;
+  padding-left: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.large-text {
+  font-family: fantasy;
+  font-size: -webkit-xxx-large;
+  color: whitesmoke;
 }

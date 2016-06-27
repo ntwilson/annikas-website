@@ -27,7 +27,7 @@
     "build-elm": "elm-make frontend/Lib.elm --output=obj/Lib.js",
     "build-elm-tests": "elm-make src/TestRunner.elm --output=obj/test.js",
     "build-babel-tests": "babel src frontend -d obj",
-    "prestart": "webpack -p",
+    "prestart": "npm run build-elm && webpack -p",
     "start": "cd obj && node ./app.js",
     "elm-tests": "npm run build-elm-tests && node obj/test.js",
     "babel-tests": "npm run build-babel-tests && jasmine-node obj/",
