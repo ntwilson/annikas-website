@@ -1,37 +1,21 @@
 {
-  "name": "website-template",
-  "version": "0.0.0",
-  "typings": "./typings/index.d.ts",
-  "devDependencies": {
-    "babel-cli": "^6.10.1",
-    "babel-loader": "^6.2.4",
-    "babel-preset-es2015": "^6.9.0",
-    "babel-preset-react": "^6.5.0",
-    "elm": "^0.17.0",
-    "file-loader": "0.8.5",
-    "jasmine": "^2.4.1",
-    "jasmine-core": "^2.4.1",
-    "jasmine-node": "^1.14.5",
-    "jsx-loader": "0.13.2",
-    "typings": "^1.0.5",
-    "webpack": "^1.13.1"
+  "name": "annikas-website",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build --turbopack",
+    "start": "next start"
   },
   "dependencies": {
-    "bootstrap": "^3.3.6",
-    "react": "^15.1.0",
-    "react-dom": "^15.1.0",
-    "react-router": "^2.4.1"
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "next": "15.5.4"
   },
-  "scripts": {
-    "install": "typings install react --save && typings install dt~jasmine dt~react-dom --global --save",
-    "build-elm": "elm-make frontend/Lib.elm --output=obj/Lib.js",
-    "build-elm-tests": "elm-make src/TestRunner.elm --output=obj/test.js",
-    "build-babel-tests": "babel src frontend -d obj",
-    "prestart": "npm run build-elm && webpack -p",
-    "start": "cd obj && node ./app.js",
-    "elm-tests": "npm run build-elm-tests && node obj/test.js",
-    "babel-tests": "npm run build-babel-tests && jasmine-node obj/",
-    "test": "npm run babel-tests && npm run elm-tests",
-    "clean": "rm -rf obj"
+  "devDependencies": {
+    "typescript": "^5",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19"
   }
 }
