@@ -5,7 +5,7 @@ const nextConfig: NextConfig = {
   reactStrictMode: true,
   output: 'export',
   images: { unoptimized: true },
-  turbopack: { root: './' },
+  turbopack: { root: __dirname },
 };
 
 export default nextConfig;
