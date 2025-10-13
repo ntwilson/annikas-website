@@ -18,10 +18,11 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Voice and Speech LLC</title>
-        <meta name="description" content="Voice therapy and speech services in the Raleigh/Durham area" />
+        <title>Annika Wilson Voice and Speech LLC</title>
+        <meta name="description" content="Voice therapy and speech services. Serving telehealth patients in North Carolina and in-person visits in the Raleigh/Durham area" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
+        <meta name="google-site-verification" content="4xUgWqIO9Jvu3TLpPeVBEQXlG0waZ3QEtZUO6PYWzQQ" />
       </Head>
       <div
         className={`${styles.page} ${geistSans.variable} ${geistMono.variable}`}
