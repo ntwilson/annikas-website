@@ -1,13 +1,12 @@
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --espresso-beans: #4A453F;
+  --warm-marshmallow: #F0E8D4;
+  --flaming-torch: #BF8C60;
+  --divine-wine: #51403F;
+  --cocoa-nutmeg: #9D8474;
+  --kindling: #76706A;
+  --background: var(--cocoa-nutmeg);
+  --foreground: var(--espresso-beans);
 }
 
 html,
