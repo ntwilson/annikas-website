@@ -3,10 +3,15 @@
   --warm-marshmallow: #F0E8D4;
   --flaming-torch: #BF8C60;
   --divine-wine: #51403F;
-  --cocoa-nutmeg: #9D8474;
+  --cocoa-nutmeg: #cbac8b;
   --kindling: #76706A;
-  --background: var(--cocoa-nutmeg);
-  --foreground: var(--espresso-beans);
+  /* --background: #DAD4BA; */
+  --background: var(--espresso-beans);
+  --foreground: white;
+  --green: #506440;
+  --red: #3C120D;
+  --light-burnt: #986000;
+  --burnt: #442B00;
 }
 
 html,
