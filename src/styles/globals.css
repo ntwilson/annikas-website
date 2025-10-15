@@ -6,14 +6,14 @@
   --cocoa-nutmeg: #9D8474;
   --kindling: #76706A;
   /* --background: #DAD4BA; */
-  --background: var(--cocoa-nutmeg);
+  --background: var(--flaming-torch);
   --foreground: black;
   --green: #394C2B;
   --red: #3C120D;
   --light-burnt: #986000;
   --burnt: #442B00;
   --warm: #EAC996;
-  --cocoa-nutmeg2: #bfa291;
+  --cocoa-nutmeg-light: #bea494;
 }
 
 html,
