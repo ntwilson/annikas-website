@@ -62,12 +62,7 @@
 }
 
 .about-me-container {
-  background-color: white;
-  color: var(--burnt);
-}
-
-.about-me-container h1 {
-  color: var(--light-burnt);
+  background-color: var(--green);
 }
 
 .about-me-contents {
@@ -84,8 +79,42 @@
 }
 
 .services-container {
-  background-color: var(--green);
+  background-color: var(--warm);
+  color: var(--burnt);
+  gap: 2rem;
 }
+
+.services-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.services-card {
+  background-color: white;
+  color: var(--burnt);
+  width: 20rem;
+  border: 2px solid var(--kindling);
+  padding: 1rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  text-align: left;
+}
+
+.services-card h2 {
+  font-weight: bold;
+  text-align: center;
+}
+
+.services-card svg {
+  margin-bottom: 1rem;
+  font-size: 3em;
+}
+
 
 .services-container ul {
   padding-left: 1.5rem;
@@ -160,7 +189,7 @@
 }
 
 .footer .contact-button {
-  background-color: var(--espresso-beans);
+  background-color: black;
   color: white;
   border: none;
   padding: 0.5em 1em;
