@@ -62,7 +62,7 @@
 }
 
 .about-me-container {
-  background-color: var(--green);
+  background-color: var(--espresso-beans);
 }
 
 .about-me-contents {
@@ -79,7 +79,7 @@
 }
 
 .services-container {
-  background-color: var(--warm);
+  background-color: var(--flaming-torch);
   color: var(--burnt);
   gap: 2rem;
 }
@@ -127,6 +127,7 @@
 .services-container ol {
   padding-left: 0.5rem;
   counter-reset: list;
+  font-size: medium;
 }
 
 .services-container ol li {
@@ -141,7 +142,7 @@
 }
 
 .pricing-container {
-  background-color: var(--red);
+  background-color: var(--divine-wine);
 }
 
 .credentials {
@@ -189,7 +190,7 @@
 }
 
 .footer .contact-button {
-  background-color: black;
+  background-color: var(--espresso-beans);
   color: white;
   border: none;
   padding: 0.5em 1em;
