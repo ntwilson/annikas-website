@@ -1,7 +1,7 @@
 import Head from "next/head"
 import { Geist, Geist_Mono } from "next/font/google"
 import styles from "@/styles/Home.module.css"
-import { FaHeadset, FaRegCommentDots, FaLungs, FaHeadSideCough, FaTransgender, FaHandHoldingMedical, FaCommentMedical, FaRegComments } from "react-icons/fa";
+import { FaHeadset, FaRegCommentDots, FaLungs, FaHeadSideCough, FaTransgender, FaHandHoldingMedical, FaCommentMedical, FaRegComments, FaBriefcaseMedical } from "react-icons/fa";
 import { ReactElement } from "react"
 
 const geistSans = Geist({
@@ -77,7 +77,7 @@ export default function Home() {
               </div>
 
               <div className={styles['services-card']}>
-                <FaLungs />
+                <FaBriefcaseMedical />
                 <h2>Vocal Cord Dysfunction</h2>
                 <p>
                   Vocal Cord Dysfunction (VCD)/ Exercise Induced Laryngeal Obstruction (EILO)
