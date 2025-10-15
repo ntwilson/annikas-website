@@ -58,86 +58,62 @@ export default function Home() {
             <h1>Services</h1>
 
             <div className={styles['services-cards-container']}>
-              <ServicesCard
-                title="Evaluation and Treatment"
-                icon={<FaHeadset />}
-                description={
-                  <>
-                    Pediatric and Adult - SLP Evaluation<sup id="services-footnote-source-1">[<a href="#services-footnote-1">1</a>]</sup> and Treatment<sup id="services-footnote-source-2">[<a href="#services-footnote-2">2</a>]</sup> via Telehealth
-                    (in-person sessions coming soon)
-                  </>
-                }
-              />
+              <div className={styles['services-card']}>
+                <FaHeadset />
+                <h2>Evaluation and Treatment</h2>
+                <p>
+                  Pediatric and Adult - SLP Evaluation<sup id="services-footnote-source-1">[<a href="#services-footnote-1">1</a>]</sup> and Treatment<sup id="services-footnote-source-2">[<a href="#services-footnote-2">2</a>]</sup> via Telehealth
+                  (in-person sessions coming soon)
+                </p>
+              </div>
 
-              <ServicesCard
-                title="Voice Therapy"
-                icon={<FaRegCommentDots />}
-                description={
-                  <>
-                    Voice (dysphonia)<sup id="services-footnote-source-3">[<a href="#services-footnote-3">3</a>]</sup> including diagnosis:  vocal cord edema, vocal cord atrophy, sulcus of the vocal cord, Muscle Tension Dysphonia
-                  </>
-                }
-              />
 
-              <ServicesCard
-                title="Vocal Cord Dysfunction"
-                icon={<FaLungs />}
-                description={
-                  <>
-                    Vocal Cord Dysfunction (VCD)/ Exercise Induced Laryngeal Obstruction (EILO)
-                  </>
-                }
-              />
+              <div className={styles['services-card']}>
+                <FaRegCommentDots />
+                <h2>Voice Therapy</h2>
+                <p>
+                  Voice (dysphonia)<sup id="services-footnote-source-3">[<a href="#services-footnote-3">3</a>]</sup> including diagnosis:  vocal cord edema, vocal cord atrophy, sulcus of the vocal cord, Muscle Tension Dysphonia
+                </p>
+              </div>
 
-              <ServicesCard
-                title="Chronic Cough"
-                icon={<FaHeadSideCough />}
-                description={
-                  <>
-                    Chronic Cough/ Irritable Larynx<sup>[<a href="#services-footnote-3">3</a>]</sup>
-                  </>
-                }
-              />
+              <div className={styles['services-card']}>
+                <FaLungs />
+                <h2>Vocal Cord Dysfunction</h2>
+                <p>
+                  Vocal Cord Dysfunction (VCD)/ Exercise Induced Laryngeal Obstruction (EILO)
+                </p>
+              </div>
 
-              <ServicesCard
-                title="Muscle Tension Dysphagia"
-                icon={<FaHandHoldingMedical />}
-                description={
-                  <>
-                    Muscle Tension Dysphagia<sup>[<a href="#services-footnote-3">3</a>]</sup>
-                  </>
-                }
-              />
+              <div className={styles['services-card']}>
+                <FaHeadSideCough />
+                <h2>Cough</h2>
+                <p>
+                  Chronic Cough/ Irritable Larynx<sup>[<a href="#services-footnote-3">3</a>]</sup>
+                </p>
+              </div>
 
-              <ServicesCard
-                title="Gender affirming voice"
-                icon={<FaTransgender />}
-                description={
-                  <>
-                    Other voice and resonance disorders (gender dysphoria/ gender affirming voice)<sup id="services-footnote-source-4">[<a href="#services-footnote-4">4</a>]</sup>
-                  </>
-                }
-              />
+              <div className={styles['services-card']}>
+                <FaHandHoldingMedical />
+                <h2>Muscle Tension Dysphagia<sup>[<a href="#services-footnote-3">3</a>]</sup></h2>
+              </div>
 
-              <ServicesCard
-                title="Articulation Disorders"
-                icon={<FaCommentMedical />}
-                description={
-                  <>
-                    Articulation Disorders
-                  </>
-                }
-              />
+              <div className={styles['services-card']}>
+                <FaTransgender />
+                <h2>Gender Affirming Voice</h2>
+                <p>
+                  Other voice and resonance disorders (gender dysphoria/ gender affirming voice)<sup id="services-footnote-source-4">[<a href="#services-footnote-4">4</a>]</sup>
+                </p>
+              </div>
 
-              <ServicesCard
-                title="Accent Modification"
-                icon={<FaRegComments />}
-                description={
-                  <>
-                    Accent Modification
-                  </>
-                }
-              />
+              <div className={styles['services-card']}>
+                <FaCommentMedical />
+                <h2>Articulation Disorders</h2>
+              </div>
+
+              <div className={styles['services-card']}>
+                <FaRegComments />
+                <h2>Accent Modification</h2>
+              </div>
             </div>
 
             <h3>Disclaimers:</h3>
