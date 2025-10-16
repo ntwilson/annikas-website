@@ -1,8 +1,8 @@
 import Head from "next/head"
-import Image from "next/image"
-import Link from "next/link"
 import { Geist, Geist_Mono } from "next/font/google"
 import styles from "@/styles/Home.module.css"
+import { FaHeadset, FaRegCommentDots, FaLungs, FaHeadSideCough, FaTransgender, FaHandHoldingMedical, FaCommentMedical, FaRegComments, FaBriefcaseMedical } from "react-icons/fa";
+import { ReactElement } from "react"
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -13,6 +13,16 @@ const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 })
+
+const ServicesCard = ({ title, icon, description }: { title: string, icon: ReactElement<any, any>, description: ReactElement<any, any> }) => {
+  return (
+    <div className={styles['services-card']}>
+      {icon}
+      <h2>{title}</h2>
+      <p>{description}</p>
+    </div>
+  )
+}
 
 export default function Home() {
   return (
@@ -46,17 +56,65 @@ export default function Home() {
           </div>
           <div className={`${styles['content-container']} ${styles['services-container']}`}>
             <h1>Services</h1>
-            <ul>
-              <li>Pediatric and Adult -  SLP Evaluation<sup id="services-footnote-source-1">[<a href="#services-footnote-1">1</a>]</sup> and Treatment<sup id="services-footnote-source-2">[<a href="#services-footnote-2">2</a>]</sup> via Telehealth
-                (in-person sessions coming soon)</li>
-              <li>Voice (dysphonia)<sup id="services-footnote-source-3">[<a href="#services-footnote-3">3</a>]</sup> including diagnosis:  vocal cord edema, vocal cord atrophy, sulcus of the vocal cord, Muscle Tension Dysphonia</li>
-              <li>Vocal Cord Dysfunction (VCD)/ Exercise Induced Laryngeal Obstruction (EILO)</li>
-              <li>Chronic Cough/ Irritable Larynx<sup>[<a href="#services-footnote-3">3</a>]</sup></li>
-              <li>Muscle Tension Dysphagia<sup>[<a href="#services-footnote-3">3</a>]</sup> </li>
-              <li>Other voice and resonance disorders (gender dysphoria/ gender affirming voice)<sup id="services-footnote-source-4">[<a href="#services-footnote-4">4</a>]</sup></li>
-              <li>Articulation Disorders</li>
-              <li>Accent Modification</li>
-            </ul>
+
+            <div className={styles['services-cards-container']}>
+              <div className={styles['services-card']}>
+                <FaHeadset />
+                <h2>Evaluation and Treatment</h2>
+                <p>
+                  Pediatric and Adult - SLP Evaluation<sup id="services-footnote-source-1">[<a href="#services-footnote-1">1</a>]</sup> and Treatment<sup id="services-footnote-source-2">[<a href="#services-footnote-2">2</a>]</sup> via Telehealth
+                  (in-person sessions coming soon)
+                </p>
+              </div>
+
+
+              <div className={styles['services-card']}>
+                <FaRegCommentDots />
+                <h2>Voice Therapy</h2>
+                <p>
+                  Voice (dysphonia)<sup id="services-footnote-source-3">[<a href="#services-footnote-3">3</a>]</sup> including diagnosis:  vocal cord edema, vocal cord atrophy, sulcus of the vocal cord, Muscle Tension Dysphonia
+                </p>
+              </div>
+
+              <div className={styles['services-card']}>
+                <FaBriefcaseMedical />
+                <h2>Vocal Cord Dysfunction</h2>
+                <p>
+                  Vocal Cord Dysfunction (VCD)/ Exercise Induced Laryngeal Obstruction (EILO)
+                </p>
+              </div>
+
+              <div className={styles['services-card']}>
+                <FaHeadSideCough />
+                <h2>Cough</h2>
+                <p>
+                  Chronic Cough/ Irritable Larynx<sup>[<a href="#services-footnote-3">3</a>]</sup>
+                </p>
+              </div>
+
+              <div className={styles['services-card']}>
+                <FaHandHoldingMedical />
+                <h2>Muscle Tension Dysphagia<sup>[<a href="#services-footnote-3">3</a>]</sup></h2>
+              </div>
+
+              <div className={styles['services-card']}>
+                <FaTransgender />
+                <h2>Gender Affirming Voice</h2>
+                <p>
+                  Other voice and resonance disorders (gender dysphoria/ gender affirming voice)<sup id="services-footnote-source-4">[<a href="#services-footnote-4">4</a>]</sup>
+                </p>
+              </div>
+
+              <div className={styles['services-card']}>
+                <FaCommentMedical />
+                <h2>Articulation Disorders</h2>
+              </div>
+
+              <div className={styles['services-card']}>
+                <FaRegComments />
+                <h2>Accent Modification</h2>
+              </div>
+            </div>
 
             <h3>Disclaimers:</h3>
             <ol>
