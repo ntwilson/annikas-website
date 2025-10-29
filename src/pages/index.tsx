@@ -1,8 +1,11 @@
 import Head from "next/head"
 import { Geist, Geist_Mono } from "next/font/google"
 import styles from "@/styles/Home.module.css"
-import { FaHeadset, FaRegCommentDots, FaLungs, FaHeadSideCough, FaTransgender, FaHandHoldingMedical, FaCommentMedical, FaRegComments, FaBriefcaseMedical } from "react-icons/fa";
+import { FaHeadset, FaRegCommentDots, FaLungs, FaHeadSideCough, FaTransgender, FaHandHoldingMedical, FaCommentMedical, FaRegComments, FaBriefcaseMedical, FaRunning, FaHamburger, FaTransgenderAlt, FaClipboardList, FaLanguage } from "react-icons/fa";
+import { RiChatVoiceFill, RiParentFill } from "react-icons/ri";
 import { ReactElement } from "react"
+import { TbCards } from "react-icons/tb";
+import { IoLanguage } from "react-icons/io5";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -28,8 +31,8 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Annika Wilson Voice and Speech LLC</title>
-        <meta name="description" content="Voice therapy and speech services. Serving telehealth patients in North Carolina and in-person visits in the Raleigh/Durham area" />
+        <title>Annika Wilson - Voice + Speech, LLC</title>
+        <meta name="description" content="Annika Wilson, MS, CCC-SLP. Voice therapy and speech therapy services. Serving telehealth patients in North Carolina and in-person visits in the Raleigh + Durham area." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
         <meta name="google-site-verification" content="4xUgWqIO9Jvu3TLpPeVBEQXlG0waZ3QEtZUO6PYWzQQ" />
@@ -156,8 +159,8 @@ export default function Home() {
 
             <div className={styles['services-cards-container']}>
               <div className={styles['services-card']}>
-                <FaHeadset />
-                <h2>Evaluation and Treatment</h2>
+                <FaClipboardList />
+                <h2>Evaluation</h2>
                 <p>
                   Pediatric and Adult - SLP Evaluation<sup id="services-footnote-source-1">[<a href="#services-footnote-1">1</a>]</sup> and Treatment<sup id="services-footnote-source-2">[<a href="#services-footnote-2">2</a>]</sup> via Telehealth
                   (in-person sessions coming soon)
@@ -166,7 +169,7 @@ export default function Home() {
 
 
               <div className={styles['services-card']}>
-                <FaRegCommentDots />
+                <RiChatVoiceFill />
                 <h2>Voice Therapy</h2>
                 <p>
                   Voice (dysphonia)<sup id="services-footnote-source-3">[<a href="#services-footnote-3">3</a>]</sup> including diagnosis:  vocal cord edema, vocal cord atrophy, sulcus of the vocal cord, Muscle Tension Dysphonia
@@ -174,7 +177,7 @@ export default function Home() {
               </div>
 
               <div className={styles['services-card']}>
-                <FaBriefcaseMedical />
+                <FaRunning />
                 <h2>Vocal Cord Dysfunction</h2>
                 <p>
                   Vocal Cord Dysfunction (VCD)/ Exercise Induced Laryngeal Obstruction (EILO)
@@ -190,12 +193,12 @@ export default function Home() {
               </div>
 
               <div className={styles['services-card']}>
-                <FaHandHoldingMedical />
+                <FaHamburger />
                 <h2>Muscle Tension Dysphagia<sup>[<a href="#services-footnote-3">3</a>]</sup></h2>
               </div>
 
               <div className={styles['services-card']}>
-                <FaTransgender />
+                <FaTransgenderAlt />
                 <h2>Gender Affirming Voice</h2>
                 <p>
                   Other voice and resonance disorders (gender dysphoria/ gender affirming voice)<sup id="services-footnote-source-4">[<a href="#services-footnote-4">4</a>]</sup>
@@ -203,12 +206,12 @@ export default function Home() {
               </div>
 
               <div className={styles['services-card']}>
-                <FaCommentMedical />
+                <RiParentFill />
                 <h2>Articulation Disorders</h2>
               </div>
 
               <div className={styles['services-card']}>
-                <FaRegComments />
+                <IoLanguage />
                 <h2>Accent Modification</h2>
               </div>
             </div>

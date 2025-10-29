@@ -6,14 +6,15 @@
   --cocoa-nutmeg: #9D8474;
   --kindling: #76706A;
   /* --background: #DAD4BA; */
-  --background: var(--flaming-torch);
-  --foreground: black;
+  --background: var(--faded-green);
+  --foreground: var(--warm-marshmallow);
   --green: #394C2B;
   --red: #3C120D;
-  --light-burnt: #986000;
   --burnt: #442B00;
-  --warm: #EAC996;
-  --cocoa-nutmeg-light: #bea494;
+  --faded-green: #3f514d;
+  --chocolate: #262421;
+  --dark-espresso: #322f2b;
+  --dark-wine: #402b2a;
 }
 
 html,
