@@ -61,7 +61,7 @@
 }
 
 .about-me-container {
-  background-color: var(--espresso-beans);
+  background-color: var(--dark-espresso);
 }
 
 .about-me-contents {
@@ -189,7 +189,7 @@
 }
 
 .footer .contact-button {
-  background-color: var(--chocolate);
+  background-color: var(--dark-espresso);
   color: var(--warm-marshmallow);
   border: none;
   padding: 0.5em 1em;
