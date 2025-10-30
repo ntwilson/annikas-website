@@ -3,7 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google"
 import styles from "@/styles/Home.module.css"
 import { FaHeadSideCough, FaRunning, FaHamburger, FaTransgenderAlt, FaClipboardList } from "react-icons/fa";
 import { RiChatVoiceFill, RiParentFill } from "react-icons/ri";
-import { ReactElement } from "react"
+import { useRef } from "react"
 import { IoLanguage } from "react-icons/io5";
 import { DivFadeIn } from "@/animate-on-visible"
 
@@ -17,17 +17,9 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 })
 
-const ServicesCard = ({ title, icon, description }: { title: string, icon: ReactElement<any, any>, description: ReactElement<any, any> }) => {
-  return (
-    <div className={styles['services-card']}>
-      {icon}
-      <h2>{title}</h2>
-      <p>{description}</p>
-    </div>
-  )
-}
 
 export default function Home() {
+  const contentsRef = useRef(null)
   return (
     <>
       <Head>
@@ -137,7 +129,7 @@ export default function Home() {
       <div
         className={`${styles.page} ${geistSans.variable} ${geistMono.variable}`}
       >
-        <main className={styles.main}>
+        <main ref={contentsRef} className={styles.main}>
           <div className={styles['title-bar']}>
             <div className={styles.name}>Annika Wilson</div>
             <div className={styles.company}>
@@ -151,13 +143,13 @@ export default function Home() {
           <div className={`${styles['content-container']} ${styles['about-me-container']}`}>
             <h1>About Me</h1>
             <div className={styles['about-me-contents']}>
-              <DivFadeIn>
+              <DivFadeIn options={{ root: contentsRef.current, threshold: 0.2 }} >
                 <img
                   src="/headshot.jpg"
                   alt="Headshot of Annika Wilson"
                 />
               </DivFadeIn>
-              <DivFadeIn>
+              <DivFadeIn options={{ root: contentsRef.current, threshold: 0.2 }} >
                 <p>
                   I was inspired to be a speech pathologist because human connection is intensely meaningful and communication is a significant part of forming this connection. I am passionate about both voice rehabilitation and voice habilitation. Rehabilitation is powerful because it helps people heal, restore, and access their best voice. Habilitation is meaningful because it can share and implement positive voice practices before an injury occurs. Our voices help reflect who we are, and I want to help you use your voice to express your true self. Working together, we can explore your speech concerns, evaluate problems, and develop a therapy plan to put you on the road to recovery. The uniqueness of each person plays a significant role in my vision of patient care. I desire to give you research-based tools that are relevant to you in order to use your best voice to do your work, express your needs, and feel confident and proud of yourself. As a member of a multi-disciplinary team, I will use my skills as a speech-language pathologist and Duke Health's many diagnostic tools to aid in your evaluation, education, and healing.
                 </p>
@@ -165,12 +157,12 @@ export default function Home() {
             </div>
           </div>
           <div className={`${styles['content-container']} ${styles['services-container']}`}>
-            <DivFadeIn>
+            <DivFadeIn options={{ root: contentsRef.current, threshold: 0.2 }} >
               <h1>Services</h1>
             </DivFadeIn>
 
             <div className={styles['services-cards-container']}>
-              <DivFadeIn>
+              <DivFadeIn options={{ root: contentsRef.current, threshold: 0.2 }} >
                 <div className={styles['services-card']}>
                   <FaClipboardList />
                   <h2>Evaluation</h2>
@@ -182,7 +174,7 @@ export default function Home() {
               </DivFadeIn>
 
 
-              <DivFadeIn>
+              <DivFadeIn options={{ root: contentsRef.current, threshold: 0.2 }} >
                 <div className={styles['services-card']}>
                   <RiChatVoiceFill />
                   <h2>Voice Therapy</h2>
@@ -192,7 +184,7 @@ export default function Home() {
                 </div>
               </DivFadeIn>
 
-              <DivFadeIn>
+              <DivFadeIn options={{ root: contentsRef.current, threshold: 0.2 }} >
                 <div className={styles['services-card']}>
                   <FaRunning />
                   <h2>Vocal Cord Dysfunction</h2>
@@ -202,7 +194,7 @@ export default function Home() {
                 </div>
               </DivFadeIn>
 
-              <DivFadeIn>
+              <DivFadeIn options={{ root: contentsRef.current, threshold: 0.2 }} >
                 <div className={styles['services-card']}>
                   <FaHeadSideCough />
                   <h2>Cough</h2>
@@ -212,14 +204,14 @@ export default function Home() {
                 </div>
               </DivFadeIn>
 
-              <DivFadeIn>
+              <DivFadeIn options={{ root: contentsRef.current, threshold: 0.2 }} >
                 <div className={styles['services-card']}>
                   <FaHamburger />
                   <h2>Muscle Tension Dysphagia<sup>[<a href="#services-footnote-3">3</a>]</sup></h2>
                 </div>
               </DivFadeIn>
 
-              <DivFadeIn>
+              <DivFadeIn options={{ root: contentsRef.current, threshold: 0.2 }} >
                 <div className={styles['services-card']}>
                   <FaTransgenderAlt />
                   <h2>Gender Affirming Voice</h2>
@@ -229,14 +221,14 @@ export default function Home() {
                 </div>
               </DivFadeIn>
 
-              <DivFadeIn>
+              <DivFadeIn options={{ root: contentsRef.current, threshold: 0.2 }} >
                 <div className={styles['services-card']}>
                   <RiParentFill />
                   <h2>Articulation Disorders</h2>
                 </div>
               </DivFadeIn>
 
-              <DivFadeIn>
+              <DivFadeIn options={{ root: contentsRef.current, threshold: 0.2 }} >
                 <div className={styles['services-card']}>
                   <IoLanguage />
                   <h2>Accent Modification</h2>
@@ -244,7 +236,7 @@ export default function Home() {
               </DivFadeIn>
             </div>
 
-            <DivFadeIn>
+            <DivFadeIn options={{ root: contentsRef.current, threshold: 0.2 }} >
               <h3>Disclaimers:</h3>
               <ol>
                 <li id="services-footnote-1">This will be a "non-instrumental" evaluation. Insurance jargon for this is a "behavioral evaluation" which means I will ask relevant questions to assess your symptoms, have you complete written assessments (e.g. VHI, LCQ) and perform other perceptual evaluations (e.g. CAPE-V).</li>
@@ -255,10 +247,10 @@ export default function Home() {
             </DivFadeIn>
           </div>
           <div className={`${styles['content-container']} ${styles['pricing-container']}`}>
-            <DivFadeIn>
+            <DivFadeIn options={{ root: contentsRef.current, threshold: 0.2 }} >
               <h1>Pricing <span style={{ fontStyle: 'italic', paddingLeft: "2rem", fontSize: "x-large" }}> Coming soon!</span></h1>
             </DivFadeIn>
-            <DivFadeIn>
+            <DivFadeIn options={{ root: contentsRef.current, threshold: 0.2 }} >
               <p>I am working on submitting required paperwork to be able to bill insurance. Please reach out via email if you have questions or would like to discuss rates prior to this being complete. </p>
             </DivFadeIn>
 

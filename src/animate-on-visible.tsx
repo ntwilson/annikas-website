@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import styles from "@/styles/Home.module.css"
 
-function trackIsVisible(options = {}): [React.RefObject<HTMLDivElement | null>, boolean] {
+function trackIsVisible(options: IntersectionObserverInit | undefined = {}): [React.RefObject<HTMLDivElement | null>, boolean] {
   const ref = useRef(null)
   const [isVisible, setIsVisible] = useState(false)
 
@@ -24,12 +24,13 @@ function trackIsVisible(options = {}): [React.RefObject<HTMLDivElement | null>, 
 }
 
 type DivIsVisibleProps = {
-  className: (isVisible: boolean) => string;
-  children: React.ReactNode;
+  className: (isVisible: boolean) => string
+  options: IntersectionObserverInit
+  children: React.ReactNode
 }
 
 export function DivIsVisible(props: DivIsVisibleProps) {
-  const [ref, isVisible] = trackIsVisible({ threshold: 0.1 });
+  const [ref, isVisible] = trackIsVisible(props.options)
 
   return (
     <div ref={ref} className={props.className(isVisible)}>
@@ -38,9 +39,9 @@ export function DivIsVisible(props: DivIsVisibleProps) {
   )
 }
 
-export function DivFadeIn(props: { children: React.ReactNode }) {
+export function DivFadeIn(props: { options?: IntersectionObserverInit, children: React.ReactNode }) {
   return (
-    <DivIsVisible className={(isVisible: boolean) => isVisible ? ` ${styles['fade-in']}` : ` ${styles['pre-fade-in']}`}>
+    <DivIsVisible className={(isVisible: boolean) => isVisible ? ` ${styles['fade-in']}` : ` ${styles['pre-fade-in']}`} options={props.options || {}}>
       {props.children}
     </DivIsVisible>
   )
