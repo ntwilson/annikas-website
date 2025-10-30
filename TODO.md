@@ -18,8 +18,6 @@
 ## Nathan
 
 - Start with Mission Statement instead of About Me
-- Prominent LGBTQ flag right at the top
-- Figure out what gets bolded on the google search description
 
 
 

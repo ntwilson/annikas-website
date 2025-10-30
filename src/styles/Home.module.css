@@ -45,8 +45,25 @@
 }
 
 .company {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.company span {
   font-size: x-large;
   font-weight: bold;
+}
+
+.pre-fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 1s ease-out, transform 1s ease-out;
 }
 
 .content-container {
@@ -164,7 +181,7 @@
   bottom: 0;
   z-index: 99;
   background-color: var(--background);
-  border-top: 2px solid var(--chocolate);
+  border-top: 1px solid var(--chocolate);
   box-shadow: 0 0 15px 5px var(--chocolate);
   font-size: large;
   font-weight: bold;
