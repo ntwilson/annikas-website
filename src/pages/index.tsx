@@ -6,6 +6,7 @@ import { RiChatVoiceFill, RiParentFill } from "react-icons/ri";
 import { useRef } from "react"
 import { IoLanguage } from "react-icons/io5";
 import { DivFadeIn } from "@/animate-on-visible"
+import metadata from "@/site-metadata.json"
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -32,98 +33,7 @@ export default function Home() {
         {/* Structured Data for Google */}
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "MedicalBusiness",
-              "name": "Annika Wilson Voice and Speech LLC",
-              "description": "Voice therapy and speech services. Serving telehealth patients in North Carolina and in-person visits in the Raleigh/Durham area",
-              "url": "https://annikawilsonvoiceandspeech.com",
-              "logo": "https://annikawilsonvoiceandspeech.com/favicon.ico",
-              "image": "https://annikawilsonvoiceandspeech.com/headshot.jpg",
-              "email": "annika.wilson@voiceslp.com",
-              "address": {
-                "@type": "PostalAddress",
-                "addressRegion": "NC",
-                "addressCountry": "US",
-                "addressLocality": "Raleigh/Durham area"
-              },
-              "founder": {
-                "@type": "Person",
-                "name": "Annika Wilson",
-                "jobTitle": "Speech-Language Pathologist",
-                "image": "https://annikawilsonvoiceandspeech.com/headshot.jpg",
-                "sameAs": []
-              },
-              "medicalSpecialty": [
-                "Speech-Language Pathology",
-                "Voice Therapy",
-                "Speech Therapy"
-              ],
-              "serviceType": [
-                "Voice Therapy",
-                "Speech Evaluation",
-                "Vocal Cord Dysfunction Treatment",
-                "Chronic Cough Treatment",
-                "Gender Affirming Voice Therapy",
-                "Articulation Disorders",
-                "Accent Modification"
-              ],
-              "areaServed": {
-                "@type": "State",
-                "name": "North Carolina"
-              },
-              "hasOfferCatalog": {
-                "@type": "OfferCatalog",
-                "name": "Speech and Voice Services",
-                "itemListElement": [
-                  {
-                    "@type": "Offer",
-                    "itemOffered": {
-                      "@type": "Service",
-                      "name": "Evaluation and Treatment",
-                      "description": "Pediatric and Adult SLP Evaluation and Treatment via Telehealth"
-                    }
-                  },
-                  {
-                    "@type": "Offer",
-                    "itemOffered": {
-                      "@type": "Service",
-                      "name": "Voice Therapy",
-                      "description": "Treatment for dysphonia including vocal cord edema, vocal cord atrophy, sulcus of the vocal cord, Muscle Tension Dysphonia"
-                    }
-                  },
-                  {
-                    "@type": "Offer",
-                    "itemOffered": {
-                      "@type": "Service",
-                      "name": "Vocal Cord Dysfunction Treatment",
-                      "description": "Treatment for Vocal Cord Dysfunction (VCD) and Exercise Induced Laryngeal Obstruction (EILO)"
-                    }
-                  },
-                  {
-                    "@type": "Offer",
-                    "itemOffered": {
-                      "@type": "Service",
-                      "name": "Chronic Cough Treatment",
-                      "description": "Treatment for Chronic Cough and Irritable Larynx"
-                    }
-                  },
-                  {
-                    "@type": "Offer",
-                    "itemOffered": {
-                      "@type": "Service",
-                      "name": "Gender Affirming Voice Therapy",
-                      "description": "Voice and resonance therapy for gender dysphoria and gender affirming voice"
-                    }
-                  }
-                ]
-              },
-              "priceRange": "Contact for pricing",
-              "paymentAccepted": "Insurance (in process)",
-              "currenciesAccepted": "USD"
-            })
-          }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(metadata) }}
         />
       </Head>
       <div
@@ -151,7 +61,7 @@ export default function Home() {
               </DivFadeIn>
               <DivFadeIn options={{ root: contentsRef.current, threshold: 0.2 }} >
                 <p>
-                  I was inspired to be a speech pathologist because human connection is intensely meaningful and communication is a significant part of forming this connection. I am passionate about both voice rehabilitation and voice habilitation. Rehabilitation is powerful because it helps people heal, restore, and access their best voice. Habilitation is meaningful because it can share and implement positive voice practices before an injury occurs. Our voices help reflect who we are, and I want to help you use your voice to express your true self. Working together, we can explore your speech concerns, evaluate problems, and develop a therapy plan to put you on the road to recovery. The uniqueness of each person plays a significant role in my vision of patient care. I desire to give you research-based tools that are relevant to you in order to use your best voice to do your work, express your needs, and feel confident and proud of yourself. As a member of a multi-disciplinary team, I will use my skills as a speech-language pathologist and Duke Health's many diagnostic tools to aid in your evaluation, education, and healing.
+                  I was inspired to be a speech pathologist because human connection is intensely meaningful and communication is a significant part of forming this connection. I am passionate about both voice rehabilitation and voice habilitation. Rehabilitation is powerful because it helps people heal, restore, and access their best voice. Habilitation is meaningful because it can share and implement positive voice practices before an injury occurs. Our voices help reflect who we are, and I want to help you use your voice to express your true self. Working together, we can explore your speech concerns, evaluate problems, and develop a therapy plan to put you on the road to recovery. The uniqueness of each person plays a significant role in my vision of patient care. I desire to give you research-based tools that are relevant to you in order to use your best voice to do your work, express your needs, and feel confident and proud of yourself. As a seasoned outpatient clinician, I will use my skills as a speech-language pathologist to aid in your evaluation, education, and healing.
                 </p>
               </DivFadeIn>
             </div>

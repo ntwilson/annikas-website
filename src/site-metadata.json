@@ -1,0 +1,90 @@
+{
+  "@context": "https://schema.org",
+  "@type": "MedicalBusiness",
+  "name": "Annika Wilson Voice and Speech LLC",
+  "description": "Voice therapy and speech services. Serving telehealth patients in North Carolina and in-person visits in the Raleigh/Durham area",
+  "url": "https://annikawilsonvoiceandspeech.com",
+  "logo": "https://annikawilsonvoiceandspeech.com/favicon.ico",
+  "image": "https://annikawilsonvoiceandspeech.com/headshot.jpg",
+  "email": "annika.wilson@voiceslp.com",
+  "address": {
+    "@type": "PostalAddress",
+    "addressRegion": "NC",
+    "addressCountry": "US",
+    "addressLocality": "Raleigh/Durham area"
+  },
+  "founder": {
+    "@type": "Person",
+    "name": "Annika Wilson",
+    "jobTitle": "Speech-Language Pathologist",
+    "image": "https://annikawilsonvoiceandspeech.com/headshot.jpg",
+    "sameAs": []
+  },
+  "medicalSpecialty": [
+    "Speech-Language Pathology",
+    "Voice Therapy",
+    "Speech Therapy"
+  ],
+  "serviceType": [
+    "Voice Therapy",
+    "Speech Evaluation",
+    "Vocal Cord Dysfunction Treatment",
+    "Chronic Cough Treatment",
+    "Gender Affirming Voice Therapy",
+    "Articulation Disorders",
+    "Accent Modification"
+  ],
+  "areaServed": {
+    "@type": "State",
+    "name": "North Carolina"
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Speech and Voice Services",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Evaluation and Treatment",
+          "description": "Pediatric and Adult SLP Evaluation and Treatment via Telehealth"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Voice Therapy",
+          "description": "Treatment for dysphonia including vocal cord edema, vocal cord atrophy, sulcus of the vocal cord, Muscle Tension Dysphonia"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Vocal Cord Dysfunction Treatment",
+          "description": "Treatment for Vocal Cord Dysfunction (VCD) and Exercise Induced Laryngeal Obstruction (EILO)"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Chronic Cough Treatment",
+          "description": "Treatment for Chronic Cough and Irritable Larynx"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Gender Affirming Voice Therapy",
+          "description": "Voice and resonance therapy for gender dysphoria and gender affirming voice"
+        }
+      }
+    ]
+  },
+  "priceRange": "Contact for pricing",
+  "paymentAccepted": "Insurance (in process)",
+  "currenciesAccepted": "USD"
+}
